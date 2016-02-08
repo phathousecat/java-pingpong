@@ -6,12 +6,13 @@ import java.util.ArrayList;
 public class PingPongTest {
 
   @Test
-  public void makeList_returnsAListOfNumbers(){
+  public void replaceNumbers_ifFunctionPassesTrueAndPrintsNumberList(){
     PingPong PingPongTest = new PingPong();
-    ArrayList<Integer> list = new ArrayList<Integer>();
-    list.add(1);
-    list.add(2);
-    assertEquals(list, PingPongTest.makeList(2));
+    ArrayList<Object> finalList = new ArrayList<Object>();
+    finalList.add(1);
+    finalList.add(2);
+    finalList.add("ping");
+    assertEquals(finalList, PingPongTest.replaceNumbers(3));
   }
 
   @Test
