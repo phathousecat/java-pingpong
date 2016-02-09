@@ -5,6 +5,8 @@ import java.util.ArrayList;
 
 public class PingPongTest {
 
+  // tests cover functionality well! refactors would probably look great!
+
   @Test
   public void replaceNumbers_ifFunctionPassesTrueAndPrintsNumberList(){
     PingPong PingPongTest = new PingPong();
